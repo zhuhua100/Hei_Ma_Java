@@ -17,9 +17,15 @@ public class Keeper {
         this.age = age;
     }
 
-    public void keepPet(Animal animal,String something){
+    public void keepPet(Dog dog,String something){
         String last_name=name.substring(0,1);
-        System.out.print("年龄为"+this.age+"岁的老"+last_name+"养了一只"+animal.getColor()+"颜色的"+animal.getAge()+"岁的");
-        animal.eat(something);
+        System.out.println("年龄为"+this.age+"岁的老"+last_name+"养了一只"+dog.getColor()+"颜色的"+dog.getAge()+"岁的狗。");
+        dog.eat(something);
+    }
+
+    public void keepPet(Cat cat,String something){
+        String last_name=name.substring(0,1);
+        System.out.println("年龄为"+this.age+"岁的老"+last_name+"养了一只"+cat.getColor()+"颜色的"+cat.getAge()+"岁的猫。");
+        cat.eat(something);
     }
 }

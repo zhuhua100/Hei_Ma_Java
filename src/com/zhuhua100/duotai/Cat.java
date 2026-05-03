@@ -15,8 +15,7 @@ public class Cat extends Animal {
 
      @Override
      public void eat(String something){
-         System.out.println("猫");
-         System.out.println(this.getAge()+"岁的"+this.getColor()+"颜色的猫咪着眼睛侧着头吃鱼。");
+         System.out.println(this.getAge()+"岁的"+this.getColor()+"颜色的猫咪着眼睛侧着头吃"+something+"。");
     }
 
     public void catchMouse(){
